@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <!-- Header with Background Image -->
+    <ImageView
+        android:id="@+id/headerBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/backgroundmain"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="Header Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35" />
+
+    <!-- App Title in Header -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="232dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/orelega_one"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/keyword_spotted"
+        android:textColor="@color/white"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- Icona Microfono nell'Header -->
+
+
+    <ImageView
+        android:id="@+id/microphoneIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Microphone Icon"
+        android:src="@drawable/ic_microphone"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:letterSpacing="0.01"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerBackground" />
+
+    <!-- START -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnStartStop"
+        android:layout_width="313dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:stateListAnimator="@null"
+        android:text="@string/start_background"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_color"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_play"
+        app:iconGravity="textEnd"
+        app:iconPadding="0.5dp"
+        app:iconSize="28dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:rippleColor="@color/ripple_color" />
+
+    <!-- Dashboard  -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_dashboard"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/montserrat"
+        android:letterSpacing="0.02"
+        android:onClick="openDashboard"
+        android:stateListAnimator="@null"
+        android:text="@string/open_dashboard"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/background_color"
+        app:cornerRadius="1dp"
+        app:icon="@drawable/ic_dashboard"
+        app:iconGravity="textEnd"
+        app:iconPadding="1dp"
+        app:iconSize="24dp"
+        app:iconTint="@color/secondary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnStartStop"
+        app:rippleColor="@color/ripple_color"
+        app:strokeColor="@color/secondary_text"
+        app:strokeWidth="2dp" />
+
+    <!-- Logout  -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="191dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@android:color/transparent"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:onClick="logout"
+        android:text="@string/logout"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        app:cornerRadius="24dp"
+        app:icon="@drawable/ic_logout"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconSize="20dp"
+        app:iconTint="@color/secondary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_dashboard"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="@color/ripple_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Default" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/gradient_start</item>
+        <item name="colorSecondary">@color/gradient_end</item>
+        <item name="colorSurface">@color/background_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnSurface">@color/primary_text</item>
+        <item name="android:statusBarColor">@color/gradient_start</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Default" parent="Base.Theme.Default" />
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colore di sfondo generale -->
+    <color name="background_color">#FFFFFF</color>
+
+    <!-- Colori primari -->
+    <color name="primary_color">#1976D2</color> <!-- Blu principale -->
+    <color name="primary_text">#212121</color>  <!-- Testo principale -->
+    <color name="secondary_text">#757575</color> <!-- Testo secondario -->
+
+    <!-- Colori per il gradiente header -->
+    <color name="gradient_start">#1976D2</color> <!-- Blu scuro -->
+    <color name="gradient_end">#03DAC6</color>   <!-- Cyan -->
+    
+    <!-- Colori aggiuntivi usati nei bottoni -->
+    <color name="primary_button">#1976D2</color>       <!-- Pulsante start -->
+    <color name="stop_button">#F44336</color>          <!-- Pulsante stop -->
+    <color name="dashboard_button">#2196F3</color>     <!-- Pulsante dashboard -->
+    <color name="logout_button">#FF9800</color>        <!-- Pulsante logout -->
+
+    <!-- Colori ripple ed effetti -->
+    <color name="ripple_color">#E0E0E0</color>
+    <color name="stroke_color">#E8E8E8</color>
+
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KeyWordSpotting</string>
+    <string name="keyword_spotted">KeyWord Spotting</string>
+    <string name="welcome">Welcome!</string>
+    <string name="logout">Logout</string>
+    <string name="start_background">START</string>
+    <string name="stop_background">STOP</string>
+    <string name="open_dashboard">Dashboard</string>
+    <string name="registrazione">Create Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="crea_account">Create account</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="sensitive_events_chronology">Sensitive Events Chronology:</string>
+    <string name="no_events_registered_yet">No events registered yet.</string>
+    <string name="clear_history">Clear history</string>
+    <string name="privacy_tips">Privacy Tips:</string>
+    <string name="keep_your_apps_updated">- Keep your apps updated </string>
+    <string name="review_microphone_permissions">- Review microphone permissions</string>
+    <string name="be_cautious_on_public_wi_fi">- Be cautious on public Wi-Fi</string>
+</resources>
